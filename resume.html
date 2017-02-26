@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Steve Karsch - Senior Drupal Developer</title>
+    <meta name="description" content="Steve Karsch - Senior Drupal Developer">
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700');
+    body {
+        font-size: 2.7vmin;
+        line-height: 3.6vmin;
+        font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+        font-weight: 300;
+    }
+    
+    a:link,
+    a:visited {
+        color: rgba(102, 119, 153, 1);
+        text-decoration: none;
+    }
+    
+    a:hover,
+    a:active {
+        color: rgba(102, 119, 153, 0.55);
+        text-decoration: none;
+        border-bottom: 1px solid #679;
+        border-color: rgba(102, 119, 153, 0.55);
+    }
+    
+    header,
+    footer {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 1px solid #679;
+    }
+    
+    footer {
+        border-top: 1px solid #679;
+        border-bottom: none;
+        padding-top: 8px;
+    }
+    
+    header h1 {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
+    header h2 {
+        margin-top: 2.4vmin;
+        margin-bottom: 1.2vmin;
+    }
+    
+    #container {
+        display: flex;
+        display: -webkit-flex;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .experience {
+        -webkit-flex: 2 0 0;
+        flex: 2 0 0;
+    }
+    
+    .contact {
+        -webkit-flex: 1 0 0;
+        flex: 1 0 0;
+        padding-left: 2.7vw;
+    }
+    
+    h3.section-title,
+    .contact h4 {
+        text-transform: uppercase;
+    }
+    
+    .date-range {
+        font-style: italic;
+        font-weight: 300;
+    }
+    
+    @media only screen and (max-width: 720px) {
+        header,
+        footer {
+            width: 100%;
+            display: block;
+        }
+        header h1 {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        header h2 {
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+        #container {
+            display: inline;
+            font-size: 4.0vmin;
+            line-height: 5.6vmin;
+        }
+        .contact {
+            float: left;
+            display: block !important;
+        }
+    }
+
+    @media print {
+      #container, header, footer {
+        width: 100%;
+        margin: 0; padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 2.2vmin;
+        line-height: 3.0vmin;
+      }
+    }
+    </style>
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-741455-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+
+<body>
+    <header>
+        <h1 class="name">Steve Karsch</h1>
+        <h2 class="role">Senior Drupal Developer</h2>
+    </header>
+    <div id="container">
+        <div class="experience">
+            <h3 class="section-title">Experience</h3>
+            <div class="rodale">
+                <h4 class="company">Rodale</h4>
+                <h5 class="role">Senior Software Engineer <span class="date-range">June 2015 - present</span></h5>
+                <ul>
+                  <li>Worked with Product and Web development team to gather and define requirements across magazine brands such as Runner's World, Men's Health, Prevention and Bicycling magazine.</li>
+                  <li>Managed and updated Drupal 7 multisite common platform for 7 magazine brands. This included custom modules and themes working along with contributed modules to provide functionality for a high-traffic, high-availability suite of sites.</li>
+                  <li>Acted as lead developer to migrate and sync 13,000+ recipes from Rodale's vast library of recipe content across all brand sites.</li>
+                  <li>Led effort to move site search functionality off of Google Search Appliance to hosted Apache Solr on OpenSolr.com.</li>
+                  <li>Worked with the development team to continually evolve our development and QA workflows with Git, Github and Acquia Enterprise hosting.</li>
+                </ul>
+            </div>
+            <div class="zivtech">
+                <h4 class="company">Zivtech</h4>
+                <h5 class="role">Solutions Architect <span class="date-range">February 2015 — May 2015</span></h5>
+                <ul>
+                    <li>Converted Puppet configuration files to Hiera YAML to allow for greater inheritance and sharing of configuration settings between servers.</li>
+                    <li>Met with clients to gather and refine requirements. Turned requirements into tickets for the development team. Answered questions and provided clarification when needed.
+                    </li>
+                </ul>
+            </div>
+            <div class="rrs">
+                <h4 class="company">Rock River Star</h4>
+                <h5 class="role">Lead Drupal Developer <span class="date-range">September 2014 — February 2015</span></h5>
+                <ul>
+                    <li>Created a Drupal site to import participant data from multiple homeless shelters and consolidate participant records in order provide patient history reports. Used Feeds module and custom module development to leverage the Feeds API to alter the data as it was imported.</li>
+                    <li>Mentored other developers on using the Git and Features‐ based workflow for sharing code and configuration between local, staging and production Drupal sites.</li>
+                    <li>Stood up a Jenkins instance to automate repeatable tasks, such as performing database backups between various production and staging servers.</li>
+                </ul>
+            </div>
+            <div class="blink">
+                <h4 class="company">Blink Reaction</h4>
+                <h5 class="role">Senior Drupal Developer <span class="date-range">March 2014 — September 2014</span></h5>
+                <ul>
+                    <li>Launched 100+ sites in 35 countries & locales for a global pharmaceutical company. Used Janrain Capture integration for Single Sign‐On and language translations.</li>
+                    <li>Provided custom module and theme development for the redesigned and responsive Chantix.com.</li>
+                    <li>Created a custom module to import "Now Playing" feeds for multiple stations within a radio network's multisite installation.
+                    </li>
+                    <li>Provided technical guidance and module and theme development in transitioning a global financial services company to a new brand.</li>
+            </div>
+            <div class="vertex">
+                <h4 class="company">Vertex, Inc</h4>
+                <h5 class="role">Web Applications Architect <span class="date-range">January 2012 — March 2014</span></h5>
+                <ul>
+                    <li>Implemented Vagrant to standardize development environments between team members. Created a custom Vagrant image to closely match our production and staging servers.
+                    </li>
+                    <li>Implemented Jenkins to automate the site build process. Staging environments were updated when commits were merged with the staging branch.</li>
+                    <li>Constructed a Selenium Grid infrastructure to assist in the internal QA process. Screenshots were automatically generated for various browsers and breakpoints so stakeholders could quickly review progress.</li>
+                </ul>
+                <h5 class="role">Superviser, Web Applications <span class="date-range">2009 — 2012</span></h5>
+                <ul>
+                    <li>Managed a five‐person development team responsible for the company's internet and intranet presences, including a number of business critical applications.</li>
+                    <li>Acted as technical architect and lead for the migration from an ASP/SQL Server customer support portal to a Drupal‐ based customer portal. This included: content migration, infrastructure migration, custom module and theme development, migration from SVN to Git, integration with Oracle eBusiness Suite and more. Worked extensively with internal and external stakeholders to define requirements, provide technical solutions, perform usability testing and train content providers.</li>
+                    <li>Lead developer on an initiative to provide a "landing page" for the cloud deployment of the company's flagship tax calculation product. Functionality included custom PHP/Active Directory integration for user management and authentication.
+                    </li>
+                    <li>Managed and maintained over 50 intranet sites in a Drupal multisite installation.</li>
+                </ul>
+                <h5 class="role">Senior Web Systems Analyst <span class="date-range">2005 — 2009</span></h5>
+                <ul>
+                    <li>Integrated online customer portal with company’s Oracle eBusiness Suite for authentication, contact and product licensing information.</li>
+                    <li>Developed a custom web application for the company's performance management methodology, the Individual Contribution Rating Tool. The application allowed employees the ability to provide 360 feedback on their co‐ workers, managers and teammates.</li>
+                    <li>Led the move from using ASP/SQL Server based solutions for our intranet to Drupal. Led an intranet redesign project that provided users with a personalized homepage based on the open source project POSH as well as new content publishing capabilities via Drupal.</li>
+                </ul>
+                <h5 class="role">Web Developer <span class="date-range">1999 — 2005</span></h5>
+                <ul>
+                    <li>Lead developer for customer support portal which gave customers the ability to retrieve product downloads, documentation, knowledge, news and more.</li>
+                    <li>Developed an employee directory web application in ASP/SQL Server. Included an API that allowed other applications to access and utilize employee information.</li>
+                    <li>Worked with a cross‐functional team to create a knowledge base using ASP/MS Access for our support representatives to share technical information about our products across departments.
+                    </li>
+                </ul>
+            </div>
+            <div class="drupal-community">
+                <h4 class="company">Drupal Community</h4>
+                <h5 class="role">Contributor <span class="date-range">2007 — Present</span></h5>
+                <ul>
+                    <li>Contributed patches and patch reviews for Drupal 6, Drupal 7 and Drupal 8.</li>
+                    <li>Contributed the NikePlus module, syncing Nike+ data with Drupal 6 installs and exposing the data to Views.
+                        <br />
+                        <a href="http://drupal.org/project/nikeplus">http://drupal.org/project/nikeplus</a></li>
+                    <li>Presented at Drupaldelphia 2009, Drupaldelphia 2011 and Drupaldelphia 2014.
+                        <br />
+                        <a href="http://www.slideshare.net/karschsp/drupal‐7‐whats‐in‐it‐
+for‐you‐1797069">http://www.slideshare.net/karschsp/drupal‐7‐whats‐in‐it‐
+for‐you‐1797069</a>
+                        <br />
+                        <a href="http://www.slideshare.net/karschsp/getting‐involved‐in‐
+the‐drupal‐community‐8726045">http://www.slideshare.net/karschsp/getting‐involved‐in‐
+the‐drupal‐community‐8726045</a>
+                        <br />
+                        <a href="http://www.slideshare.net/karschsp/drupaldelphia‐2014‐
+standardize‐environments‐with‐vagrant">http://www.slideshare.net/karschsp/drupaldelphia‐2014‐
+standardize‐environments‐with‐vagrant</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact">
+            <h4>Contact</h4>
+            <p>49 Green Lane
+                <br /> Aston, PA 19014
+                <br />
+                <a href="mailto:steve@stevekarsch.com">steve[at]stevekarsch[dot]com</a>
+                <br /> 215.796.2491
+                <br />
+                <a href="http://www.stevekarsch.com">www.stevekarsch.com</a></p>
+            <h4>Summary</h4>
+            <p>I am an experienced web developer with 15+ years of architecting and developing web solutions. I specialize in using Drupal and other open source technologies to ensure client success and satisfaction. I am seeking a position with an organization that will allow me to best utilize my experience while continuing to develop and learn new skills.</p>
+            <h4>Skills</h4>
+            <p>Drupal (versions 5/6/7/8), Javascript/jQuery, Web Standards (HTML/JS/CSS), Linux, OS X, Windows, PHP, MySQL, Apache, Git, SVN, Vagrant, Puppet, Jenkins, Selenium, ASP, SQL Server, IIS</p>
+            <h4>Online</h4>
+            <p><a href="mailto:steve@stevekarsch.com">steve[at]stevekarsch[dot]com</a>
+                <br />
+                <a href="http://drupal.org/u/karschsp">http://drupal.org/u/karschsp</a>
+                <br />
+                <a href="http://github.com/karschsp">http://github.com/karschsp</a>
+                <br />
+                <a href="http://stevekarsch.com">http://stevekarsch.com</a>
+                <br />
+                <a href="http://twitter.com/karschsp">http://twitter.com/karschsp</a></p>
+            <h4>Certifications &amp; Memberships</h4>
+            <p>Drupal Association Member
+                <br /> Acquia Certified Developer - <span class="date-range">September, 2014    </span></p>
+        </div>
+    </div>
+    <footer>Professional references available upon request.</footer>
+</body>
+
+</html>
